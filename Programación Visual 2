@@ -1,0 +1,7 @@
+s0.initImage("https://media.istockphoto.com/id/498309616/es/foto/gran-mar-carretera-la-v%C3%ADa-l%C3%A1ctea-en-la-noche-vista.jpg?s=612x612&w=0&k=20&c=XUsavsgJptpEqwLSe2VUzhBwTi3vmGzBg9V25TrBH1Q=")
+osc(10).modulate(src(s0),1).blend(osc(3,0.2,1)).modulate(osc(10,0.1,0.5)
+.kaleid(100)
+.scale(({time})=>Math.sin(time*1)*0.5+1)
+.modulate(noise(0.6,0.5)),
+0.5)
+.out(o0)
